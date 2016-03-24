@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>registration form</title>
+</head>
+
+<body>
+	<form>
+	<h3>Registration Form</h3>
+	<ul>
+	<li>
+		<label for="name">姓名(必填)：</label>
+		<input name="name" id="name" type="text" maxlength="10" required> 
+	</li>
+	<li>
+		<label>學院(必填)：</label>
+		<select name="學院">
+    		<optgroup label="學院">
+		        <option value="liberalArts">文學院</option>
+		        <option value="science">理學院</option>
+		        <option value="socialSciences">社會科學學院</option>
+		        <option value="law">法學院</option>
+		        <option value="commerce">商學院</option>
+		        <option value="foreignLanguages">外國語文學院</option>
+		        <option value="communication">傳播學院</option>
+		        <option value="internaionalAffairs">國際事務學院</option>
+		        <option value="education">教育學院</option>
+		    </optgroup>
+		</select>
+	</li>
+	<li>
+		<label>手機(必填)：</label>
+		<input type="tel" name="phone_number" id="phone_number" tabindex="1" placeholder="0987654321" maxlength="10" required pattern="[0-9]{10}">
+	</li>
+	<li>
+		<label for="email">Email(必填)：</label>
+		<input type="email" placeholder="you@somewhere.com" name="email" id="email" tabindex="2" required>
+	</li>
+    <li>
+		<label>生日(非必填)：</label>	
+			<input name="year" placeholder="西元年">
+        	<input name="month" placeholder="月">
+        	<input name="day" placeholder="日">
+	</li>
+	</ul>
+	<div>
+	<input type="submit" value="送出">
+	</div>
+
+	</form>
+</body>
+
+</html>
